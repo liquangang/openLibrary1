@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "openLibrary1"
-    s.version      = "1.0.1"
+    s.version      = "1.0.2"
     s.ios.deployment_target = '8.0'
     s.summary      = "私有库测试demo"
     s.description  = <<-DESC
@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
     s.license      = { :type => "MIT", :file => "LICENSE" }
     s.author       = { "liquangang" => "sgliquangang@163.com" }
     s.source       = { :git => "https://github.com/liquangang/openLibrary1.git", :tag => "#{s.version}" }
-    s.source_files  = "openLibrary1/**/*"
+    s.source_files  = "openLibrary1/Test/*"
+    s.dependency 'Masonry'
 end
